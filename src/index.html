@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notes App</title>
+    <link rel="icon" type="image/png" href="https://cdn-icons-png.flaticon.com/512/2232/2232688.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <app-header></app-header>
+    
+    <main class="container">
+        <section class="note-form-section">
+            <h2><i class="fas fa-plus-circle"></i> Add New Note</h2>
+            <note-form></note-form>
+        </section>
+        
+        <section class="notes-list-section">
+            <h2><i class="fas fa-sticky-note"></i> Your Notes</h2>
+            <div class="notes-grid" id="notesContainer"></div>
+        </section>
+        
+        <section class="archived-notes-section">
+            <h2><i class="fas fa-archive"></i> Archived Notes</h2>
+            <div class="notes-grid" id="archivedNotesContainer"></div>
+        </section>
+    </main>
+    <div class="note-card">
+        <!-- isi catatannya -->
+      </div>
+      
+    <script type="module" src="index.js"></script>
+</body>
+</html>
